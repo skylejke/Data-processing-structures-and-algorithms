@@ -106,7 +106,8 @@ void MergeSort(int* A, int first, int last)
         MergeSort(A, (first + last) / 2 + 1, last); //сортировка правой части
         Merge(A, first, last); //слияние двух частей
     }
-}
+}
+
 int main() {
     srand(time_t(NULL));
     setlocale(LC_ALL, "rus");
